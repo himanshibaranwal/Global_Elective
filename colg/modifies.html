@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Global Electives</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="subject.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body{width:100%;
+   }
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      width:100%;
+      position:fixed;
+      margin-bottom: 0;
+      border-radius: 0;
+      z-index: 10;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+        .carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+    /left: -12px;
+    top: 111px;
+    font-size: 40px;
+    bottom: 120px;
+}
+.carousel-control.right {
+    right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+
+.courses_button{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:1%;
+}
+
+.subject{
+  width: 250px; height:250px; float: left;
+}
+.intro_image{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+li{font-size:20px;}
+
+#introduction{
+    padding-top:3em;
+}
+
+#introduction li:hover{
+  font-weight: 600;
+  display:block;
+  cursor: pointer;
+  
+}
+#introduction ul{
+  float:left;
+}
+
+
+.intro_box{
+  width:inherit;
+  height:500px;
+  
+
+}
+
+.intro_box ul{
+  float:left;
+}
+
+#vocal{
+  display:none;
+}
+
+.btn-primary
+{
+  margin-left: -5px;
+  margin-top: -10px;
+  height: 40px;
+  width: 40px;
+  font-size: 1em;
+}
+
+
+  </style>
+  <link rel="stylesheet" href="animation.css" type="text/css">
+  <script src="index.js" ></script>
+</head>
+<body>
+   
+
+<nav class="navbar navbar-inverse " style="">
+  <div class="container-fluid" style="background-color: #002a5c">
+    <div class="navbar-header">
+        <img src="logo.png" class=" christ_logo" style="height:85px;">
+        <!--
+      <button type="button" class="navbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      
+      
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Courses</button>
+      
+      <button data-target="#myModal">hello</button>
+    -->
+    </div>
+  </div>
+</nav>
+
+
+<!--Information-->
+<div class="container" id="introduction">
+    <div class="jumbotron">
+      <img src="note.png" height=200px class="intro_image">
+      <h2 align=middle><u>Christ University Open Electives</u></h2>      
+    <p>Faculty Of Engineering, Christ (Deemed to be University) is proud to introduce a new subject Global electives.
+        This subject will enable the student to select a inter-denery subject offered to them according to their taste and area of interest.
+        
+    </p>
+    <p>The courses offered are as follow:</p>
+    <!--
+    <div class="intro_box">
+      <ul>
+        <li id="c1">Voice training and vocal</li>
+        <span class="img_space" id="i1">
+            <img src="theatre.jpg" width=100%>
+            </span>
+        <li id="c2">Pottery</li>
+        <span class="img_space" id="i2">
+            <img src="pottery.jpg" height=100%>
+            </span>
+        <li id="c3">Asian Cusine</li>
+        <span class="img_space" id="i3">
+          <img src="cuisine.jpg" height=100%>
+          </span>
+        <li id="c4">Art of dance</li>
+        <span class="img_space" id="i4">
+          <img src="dance.jpg" height=100%>
+          </span>
+        <li id="c5">Folding paper</li>
+        <span class="img_space" id="i5">
+          <img src="paper.jpg" height=100%>
+          </span>
+        <li id="c6">Water coservation techniques</li>
+        <span class="img_space" id="i6">
+          <img src="water.jpg" height=100%>
+          </span>
+
+     
+      </ul>  
+      
+    </div>
+-->
+
+
+
+    <hr>
+    <div class="sb">
+    <div class="subject_box" data-toggle="modal" data-target="#myModal">
+        <div class="subject_image">
+        <img src="resized/voice.jpg" >
+        </div>
+        <div class="subject_content">
+            <div class="subject_heading">
+                Voice Developement & Theraphy
+            </div>
+            <div class="subject_main">
+            A holistic system for the developement of the voice apparatus, as well as a system that can be perceived by any person, regardless of his professional training and way of thinking.
+            </div>
+            
+        </div>
+        <center>
+          <div class="container">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><center>+</center></button>
+
+            <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Vocal Development and Therapy</h4>
+                </div>
+                <div class="modal-body">
+                  
+                  <p><b>Unit I</b><pre>                                                                  </pre>01 Hrs<br>
+
+                    Introduction of course.<br>
+                    What does it mean “voice development”?<br>
+                    What makes this system of voice development unique?<br>
+                    For what it is necessary to develop voice?<br>
+
+                    <b>Unit II</b><pre>                                                                  </pre>14 Hrs<br>
+
+                    Introduction to the initial stage  and the 1st level of the exercise system.<br>
+                    Studying of a set of exercises built on the signals of pre-speech communication.<br>
+                    Studying of  composition(s) for ensemble or choir , appropriate to the current moment of learning and the level of the group.<br>
+
+                    <b>Unit III</b><pre>                                                                 </pre>14 Hrs<br>
+
+                    Introduction to  2nd level of the exercise system.<br>
+                    Studying of a set of exercises built on the signals of the 2nd level of the exercise system.<br>
+                    Studying of  composition(s) for ensemble or choir , appropriate to the current moment of learning and the level of the group.<br>
+
+                    <b>Unit IV</b><pre>                                                                  </pre>01 Hrs<br>
+
+                    Summarizing the work.<br>
+
+                  </p>
+                </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </center>
+        
+        
+    </div>
+
+    <div class="subject_box">
+            <div class="subject_image">
+            <img src="resized/pottery.jpg" >
+            </div>
+            <div class="subject_content">
+                <div class="subject_heading">
+                   Pottery
+                </div>
+                <div class="subject_main">
+                An exciting journey through the world of clay and pottery.
+                </div>
+            </div>
+            <center><div class="subject_end">></div></center>
+            
+            
+        </div>
+
+        <div class="subject_box">
+                <div class="subject_image">
+                <img src="resized/cuisine.jpg" >
+                </div>
+                <div class="subject_content">
+                    <div class="subject_heading">
+                        Asian Cuisine
+                    </div>
+                    <div class="subject_main">
+                   Bringing you the joy of cooking with Asian cusine. A subject brought to you by thee department of Hotel Management.
+                   This course is sure to set your taste buds on fire and let you explore the back world where the magic taste is bought to life.
+                    </div> 
+                </div>
+                <center><div class="subject_end">></div></center>
+                
+                
+            </div>
+
+        <!--second row-->
+
+        <div class="subject_box">
+                <div class="subject_image">
+                <img src="resized/intellect.jpg" >
+                </div>
+                <div class="subject_content">
+                    <div class="subject_heading">
+                        Intellectual Property Rights
+                    </div>
+                    <div class="subject_main">
+                    This course intends to equip students to understand the policies and procedures they may have to rely on for the purpose of protecting their inventions or creative works during the course of their study or employment.     
+                </div>               
+                </div>
+                <center><div class="subject_end">></div></center>
+                
+            </div>
+
+            <div class="subject_box">
+                    <div class="subject_image">
+                    <img src="resized/paper.jpg" >
+                    </div>
+                    <div class="subject_content">
+                        <div class="subject_heading">
+                           Unfolding paper
+                        </div>
+
+                        <div class="subject_main">
+                        The course introduces handmade paper making to awe-inspiring art and spatial forms using paper. The course would be jointly offered by School of Architecture and Centre for Social action.                     </div>
+                    
+                        </div>
+                        <center><div class="subject_end">></div></center>
+                    
+                    
+                </div>
+                
+                <div class="subject_box">
+                        <div class="subject_image">
+                        <img src="resized/dance.jpg" >
+                        </div>
+                        <div class="subject_content">
+                            <div class="subject_heading">
+                                Movement Training
+                            </div>
+                            This course aims at making the students aware of their free bodily movements, using various dance styles and techniques. During this 45 hour course, the students will gain the ability to move their bodies rhythmically through dance.                                                     </div>
+                                                    <center><div class="subject_end">></div></center>
+                                                    
+                    </div>
+            
+                    <!--Third row-->
+
+                    <div class="subject_box">
+                            <div class="subject_image">
+                            <img src="resized/digital_writing.jpg" >
+                            </div>
+                            <div class="subject_content">
+                                <div class="subject_heading">
+                                Digital Writing
+                                </div>
+                                <div class="subject_main">
+                                This course gives the students ot different writing techniques with respect to tone, purpose personas etc..
+                            In a era of digital information it teaches individuals to use social meada and communication effectively
+                                                 </div>               
+                            </div>
+                            <center><div class="subject_end">></div></center>
+                            
+                        </div>
+            
+                        <div class="subject_box">
+                                <div class="subject_image">
+                                <img src="resized/organizational_behaviour.jpg" >
+                                </div>
+                                <div class="subject_content">
+                                    <div class="subject_heading">
+                                       Organizational behaviour and dev.
+                                    </div>
+            
+                                    <div class="subject_main">
+                                            A Social worker often works/practices in organizations, or through organizations informal or formal. It is imperative that they understand organizations and learn to lead and motivate their fellow workers                                    </div>
+                                
+                                    </div>
+                                    <center><div class="subject_end">></div></center>
+                                
+                                
+                            </div>
+                            
+                            <div class="subject_box">
+                                    <div class="subject_image">
+                                    <img src="resized/dance.jpg" >
+                                    </div>
+                                    <div class="subject_content">
+                                        <div class="subject_heading">
+                                            Dance
+                                        </div>
+                                        A holistic system for the developement of the voice apparatus, as well as a system that can be perceived by any person, regardless of his professional training and way of thinking.
+                                                                </div>
+                                                                <center><div class="subject_end">></div></center>
+                                                                
+                                </div>
+                        
+
+                                <!-- Fourth row-->
+
+                                <div class="subject_box">
+                                        <div class="subject_image">
+                                        <img src="resized/intellect.jpg" >
+                                        </div>
+                                        <div class="subject_content">
+                                            <div class="subject_heading">
+                                                Intellectual Property Rights
+                                            </div>
+                                            <div class="subject_main">
+                                            This course intends to equip students to understand the policies and procedures they may have to rely on for the purpose of protecting their inventions or creative works during the course of their study or employment.     
+                                        </div>               
+                                        </div>
+                                        <center><div class="subject_end">></div></center>
+                                        
+                                    </div>
+                        
+                                    <div class="subject_box">
+                                            <div class="subject_image">
+                                            <img src="resized/paper.jpg" >
+                                            </div>
+                                            <div class="subject_content">
+                                                <div class="subject_heading">
+                                                   Unfolding paper
+                                                </div>
+                        
+                                                <div class="subject_main">
+                                                The course introduces handmade paper making to awe-inspiring art and spatial forms using paper. The course would be jointly offered by School of Architecture and Centre for Social action.                     </div>
+                                            
+                                                </div>
+                                                <center><div class="subject_end">></div></center>
+                                            
+                                            
+                                        </div>
+                                        
+                                        <div class="subject_box">
+                                                <div class="subject_image">
+                                                <img src="resized/dance.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                        Dance
+                                                    </div>
+                                                    A holistic system for the developement of the voice apparatus, as well as a system that can be perceived by any person, regardless of his professional training and way of thinking.
+                                                                            </div>
+                                                                            <center><div class="subject_end">></div></center>
+                                                                            
+                                            </div>
+                                    
+
+
+
+
+
+    
+
+    
+
+
+</div>
+    </div>
+  </div>
+
+
+<br>
+<footer class="container-fluid text-center" style="color: white; background-color: #002a5c;">
+  <p>Copyright@ 2018 christuniversity.in</p>
+</footer>
+
+</body>
+</html>

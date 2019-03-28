@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="data.js"></script>
+        <style>
+            *{box-sizing: border-box;}
+            #content{position:fixed;
+            top:0px;
+            height:75%;
+            border-bottom:2px solid black;
+                padding:10px;
+        }
+
+        #options{
+            padding:10px;
+            position: fixed;
+            bottom:0px;
+            height:25%;
+        }
+        </style>
+
+    </head>
+    <body><div id="content">
+            Duration<span id="duration"></span>
+            
+        </div>
+        
+
+        <div id="options">
+            <button onclick="display('course1')">Course 1</button>
+            <button onclick="display('course2')"> course 2</button>
+        </div>
+    </body>
+</html>

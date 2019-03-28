@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Global Electives</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="subject.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body{width:100%;
+   }
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      width:100%;
+      position:fixed;
+      margin-bottom: 0;
+      border-radius: 0;
+      z-index: 10;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+        .carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+    left: -12px;
+    top: 111px;
+    font-size: 40px;
+    bottom: 120px;
+}
+.carousel-control.right {
+    right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+
+.courses_button{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:1%;
+}
+
+.subject{
+  width: 250px; height:250px; float: left;
+}
+.intro_image{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+li{font-size:20px;}
+
+#introduction{
+    padding-top:3em;
+}
+
+#introduction li:hover{
+  font-weight: 600;
+  display:block;
+  cursor: pointer;
+  
+}
+#introduction ul{
+  float:left;
+}
+
+
+.intro_box{
+  width:inherit;
+  height:500px;
+  
+
+}
+
+.intro_box ul{
+  float:left;
+}
+
+#vocal{
+  display:none;
+}
+
+
+
+
+  </style>
+  <link rel="stylesheet" href="animation.css" type="text/css">
+  <script src="index.js" ></script>
+</head>
+<body>
+   
+
+<nav class="navbar navbar-inverse " style="">
+  <div class="container-fluid" style="background-color: #002a5c">
+    <div class="navbar-header">
+        <img src="logo.png" class=" christ_logo" style="height:85px;">
+        <!--
+      <button type="button" class="navbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      
+      
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Courses</button>
+      
+      <button data-target="#myModal">hello</button>
+    -->
+    </div>
+  </div>
+</nav>
+
+
+<!--Information-->
+<div class="container" id="introduction">
+    <div class="jumbotron">
+      <img src="note.png" height=200px class="intro_image">
+      <h2 align=middle><u>Christ University Open Electives</u></h2>      
+    <p>Faculty Of Engineering, Christ (Deemed to be University) is proud to introduce a new subject Global electives.
+        This subject will enable the student to select a inter-denery subject offered to them according to their taste and area of interest.
+        
+    </p>
+    <p>The courses offered are as follow:</p>
+    <!--
+    <div class="intro_box">
+      <ul>
+        <li id="c1">Voice training and vocal</li>
+        <span class="img_space" id="i1">
+            <img src="theatre.jpg" width=100%>
+            </span>
+        <li id="c2">Pottery</li>
+        <span class="img_space" id="i2">
+            <img src="pottery.jpg" height=100%>
+            </span>
+        <li id="c3">Asian Cusine</li>
+        <span class="img_space" id="i3">
+          <img src="cuisine.jpg" height=100%>
+          </span>
+        <li id="c4">Art of dance</li>
+        <span class="img_space" id="i4">
+          <img src="dance.jpg" height=100%>
+          </span>
+        <li id="c5">Folding paper</li>
+        <span class="img_space" id="i5">
+          <img src="paper.jpg" height=100%>
+          </span>
+        <li id="c6">Water coservation techniques</li>
+        <span class="img_space" id="i6">
+          <img src="water.jpg" height=100%>
+          </span>
+
+     
+      </ul>  
+      
+    </div>
+-->
+
+
+
+    <hr>
+    <div class="sb">
+    <div class="subject_box" data-toggle="modal" data-target="#myModal">
+        <div class="subject_image">
+        <img src="resized/voice.jpg" >
+        </div>
+        <div class="subject_content">
+            <div class="subject_heading">
+                Voice Developement & Theraphy
+            </div>
+            <div class="subject_main">
+            A holistic system for the developement of the voice apparatus, as well as a system that can be perceived by any person, regardless of his professional training and way of thinking.
+            </div>
+            
+        </div>
+        <center><div class="subject_end">></div></center>
+        
+        
+    </div>
+
+    <div class="subject_box" data-toggle="modal" data-target="#pottery">
+            <div class="subject_image" >
+            <img src="resized/pottery.jpg" >
+            </div>
+            <div class="subject_content">
+                <div class="subject_heading">
+                   Pottery
+                </div>
+                <div class="subject_main">
+                An exciting journey through the world of clay and pottery.
+                </div>
+            </div>
+            <center><div class="subject_end">></div></center>
+            
+            
+        </div>
+
+        <div class="subject_box" data-toggle="modal" data-target="#asian_cusine">
+                <div class="subject_image">
+                <img src="resized/cuisine.jpg" >
+                </div>
+                <div class="subject_content">
+                    <div class="subject_heading">
+                        Asian Cuisine
+                    </div>
+                    <div class="subject_main">
+                   Bringing you the joy of cooking with Asian cusine. A subject brought to you by thee department of Hotel Management.
+                   This course is sure to set your taste buds on fire and let you explore the back world where the magic taste is bought to life.
+                    </div> 
+                </div>
+                <center><div class="subject_end">></div></center>
+                
+                
+            </div>
+
+        <!--second row-->
+
+        <div class="subject_box" data-toggle="modal" data-target="#intellectual_property">
+                <div class="subject_image">
+                <img src="resized/intellect.jpg" >
+                </div>
+                <div class="subject_content">
+                    <div class="subject_heading">
+                        Intellectual Property Rights
+                    </div>
+                    <div class="subject_main">
+                    This course intends to equip students to understand the policies and procedures they may have to rely on for the purpose of protecting their inventions or creative works during the course of their study or employment.     
+                </div>               
+                </div>
+                <center><div class="subject_end">></div></center>
+                
+            </div>
+
+            <div class="subject_box" data-toggle="modal" data-target="#unfolding_paper">
+                    <div class="subject_image">
+                    <img src="resized/paper.jpg" >
+                    </div>
+                    <div class="subject_content">
+                        <div class="subject_heading">
+                           Unfolding paper
+                        </div>
+
+                        <div class="subject_main">
+                        The course introduces handmade paper making to awe-inspiring art and spatial forms using paper. The course would be jointly offered by School of Architecture and Centre for Social action.                     </div>
+                    
+                        </div>
+                        <center><div class="subject_end">></div></center>
+                    
+                    
+                </div>
+                
+                <div class="subject_box" data-toggle="modal" data-target="#movement_training">
+                        <div class="subject_image">
+                        <img src="resized/movement_training.jpg" >
+                        </div>
+                        <div class="subject_content">
+                            <div class="subject_heading">
+                                Movement Training
+                            </div>
+                            This course aims at making the students aware of their free bodily movements, using various dance styles and techniques. During this 45 hour course, the students will gain the ability to move their bodies rhythmically through dance.                                                     </div>
+                                                    <center><div class="subject_end">></div></center>
+                                                    
+                    </div>
+            
+                    <!--Third row-->
+
+                    <div class="subject_box" data-toggle="modal" data-target="#digital_writing">
+                            <div class="subject_image">
+                            <img src="resized/digital_writing.jpg" >
+                            </div>
+                            <div class="subject_content">
+                                <div class="subject_heading">
+                                Digital Writing
+                                </div>
+                                <div class="subject_main">
+                                This course gives the students ot different writing techniques with respect to tone, purpose personas etc..
+                            In a era of digital information it teaches individuals to use social meada and communication effectively
+                                                 </div>               
+                            </div>
+                            <center><div class="subject_end">></div></center>
+                            
+                        </div>
+            
+                        <div class="subject_box" data-toggle="modal" data-target="#organizational_behaviour">
+                                <div class="subject_image">
+                                <img src="resized/organizational_behaviour.jpg" >
+                                </div>
+                                <div class="subject_content">
+                                    <div class="subject_heading">
+                                       Organizational behaviour and dev.
+                                    </div>
+            
+                                    <div class="subject_main">
+                                            A Social worker often works/practices in organizations, or through organizations informal or formal. It is imperative that they understand organizations and learn to lead and motivate their fellow workers                                    </div>
+                                
+                                    </div>
+                                    <center><div class="subject_end">></div></center>
+                                
+                                
+                            </div>
+                            
+                            <div class="subject_box" data-toggle="modal" data-target="#parametric_architecture">
+                                    <div class="subject_image" >
+                                    <img src="resized/parametric.jpg" >
+                                    </div>
+                                    <div class="subject_content">
+                                        <div class="subject_heading">
+                                            Parametric Architecture
+                                        </div>
+                                        Achieving efficiency and fidelity between the design concept and result of a project have been a challenge in design thinking. Using geometric and algorithmic relations, it is possible to bridge between traditional architectural production and new technological possibilities                                                                </div>
+                                                                <center><div class="subject_end">></div></center>
+                                                                
+                                </div>
+                        
+
+                                <!-- Fourth row-->
+
+                                <div class="subject_box" data-toggle="modal" data-target="#reinventing_structures">
+                                        <div class="subject_image">
+                                        <img src="resized/reinventing_structure.jpg" >
+                                        </div>
+                                        <div class="subject_content">
+                                            <div class="subject_heading">
+                                                Re-Inventing Structure
+                                            </div>
+                                            <div class="subject_main">
+                                                Beyond an empirical understanding of Building structures, a conceptual understanding of building structures can enhance design thinking through structures. The course reinforces a conceptual understanding thru provoking explorations in structural model making using various materials                                        </div>               
+                                        </div>
+                                        <center><div class="subject_end">></div></center>
+                                        
+                               </div>
+                        
+
+                                    <div class="subject_box" data-toggle="modal" data-target="#art_appericiatione">
+                                        <div class="subject_image">
+                                        <img src="resized/art_appereciation.jpg" >
+                                        </div>
+                                        <div class="subject_content">
+                                            <div class="subject_heading">
+                                                Art appereciation
+                                            </div>
+                                            <div class="subject_main">
+                                              No content
+                                              </div>
+                                        <center><div class="subject_end">></div></center>
+                                        
+                                    </div>
+                                    </div>
+
+                                   
+                                   	<!--Tribal Art and Architecture-->     
+                                    <div class="subject_box" data-toggle="modal" data-target="#tribal_art">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Tribal Art and Architecture
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+									<!--Theatre direction-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Theatre_direction">
+                                                <div class="subject_image">
+                                                <img src="theatre_dir.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Theatre direction
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Acting course-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Acting_course">
+                                                <div class="subject_image">
+                                                <img src="acting.jpg">
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Acting course
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Digital media-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Digital_media">
+                                                <div class="subject_image">
+                                                <img src="digital.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Digital media
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Professional psychology-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Professional_psychology">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Professional psychology
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Corporate Social Responsibility-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Corporate_Social_Responsibility">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Corporate Social Responsibility
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Social Welfare administration-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Social_Welfare_Administration">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Social Welfare administration
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Creativity and Innovation-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Creativity_And_Innovation">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Creativity and Innovation
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Languages-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Languages">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Languages
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Imagineering-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Imagineering">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Imagineering
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                     <!--Digital Marketing-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Digital_Marketing">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Digital Marketing
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Data Analytics through SPSS-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Data_Analytics">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Data Analytics through SPSS
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Selling with Emotional Intelligence-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Emotional_Intelligence">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Selling with Emotional Intelligence
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+                                    <!--Learning through Case Study-->
+                                    <div class="subject_box" data-toggle="modal" data-target="#Learning">
+                                                <div class="subject_image">
+                                                <img src="resized/tribal.jpg" >
+                                                </div>
+                                                <div class="subject_content">
+                                                    <div class="subject_heading">
+                                                       Learning through Case Study
+                                                    </div>
+                                                    <div class="subject_main">
+                                                        No content
+                                                    </div>
+                                                      <center><div class="subject_end">></div></center>
+                                                                            
+                                    			</div>
+                                    </div>
+
+
+
+
+    </div>
+  </div>
+
+<<<<<<< HEAD
+=======
+  <!-- Trigger the modal with a button -->
+>>>>>>> 878c01d7b3f3379640e3d02a9006e09380bb401e
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title" id="modal_title">
+            <center>Voice training and developement(cs1256)</center>
+
+            </h3>
+      </div>
+      <div class="modal-body">
+            <div class="hours">Duration: 45hrs</div>
+            <br><br>
+            <div class="jumbotron syllabus_content">
+            <p><b>Unit I</b>
+                
+                    <h4>
+              Introduction of course.<br>
+              What does it mean “voice development”?<br>
+              What makes this system of voice development unique?<br>
+              For what it is necessary to develop voice?<br>
+                </h4>
+            </div>
+            <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit II</b><br></p>
+                <h4>
+              Introduction to the initial stage  and the 1st level of the exercise system.<br>
+              Studying of a set of exercises built on the signals of pre-speech communication.<br>
+              Studying of  composition(s) for ensemble or choir , appropriate to the current moment of learning and the level of the group.<br>
+                </h4>
+            </div>
+            <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit III</b><br></p>
+                <h4>
+              Introduction to  2nd level of the exercise system.<br>
+              Studying of a set of exercises built on the signals of the 2nd level of the exercise system.<br>
+              Studying of  composition(s) for ensemble or choir , appropriate to the current moment of learning and the level of the group.<br>
+                </h4>
+            </div>
+              <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit IV</b><br></p> 
+                <h4>
+              Summarizing the work.<br>
+                </h4>
+            </p>
+              </div>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div> 
+</div>
+
+
+<!-- Modal for pottery-->
+<div id="pottery" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title" id="modal_title">
+            <center>Pottery</center>
+
+            </h3>
+      </div>
+      <div class="modal-body">
+            <div class="hours">Duration: 45hrs</div>
+            <br><br>
+            <div class="jumbotron syllabus_content">
+            <p><b>Unit I</b>
+                
+                    <h4>
+                      No content
+                </h4>
+            </div>
+            <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit II</b><br></p>
+                <h4>
+             No content </h4>
+            </div>
+            <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit III</b><br></p>
+                <h4>
+             No content
+                </h4>
+            </div>
+              <div class="jumbotron syllabus_content">
+                    
+              <p><b>Unit IV</b><br></p> 
+                <h4>
+             No content<br>
+                </h4>
+            </p>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div> 
+      </div>
+      
+
+
+
+
+
+
+
+
+
+<!-- Modal for asian-->
+<div id="asian_cusine" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Asian Cuisine</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                        No content
+                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II</b><br></p>
+                  <h4>
+               No content </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III</b><br></p>
+                  <h4>
+               No content
+                  </h4>
+              </div>
+                <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit IV</b><br></p> 
+                  <h4>
+               No content<br>
+                  </h4>
+              </p>
+                </div>
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- Modal for intellectual property-->
+<div id="intellectual_property" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Intellectual Property Rights</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                          Philology of intellectual property - Intellectual Property & Intellectual Assists – Significance of IP for Engineers and Scientists – Types of IP – Legal framework for Protection of IP – Strategies for IP protection and role of Engineers and Scientists  
+                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II</b><br></p>
+                  <h4>
+                      Meaning of Invention – Product and Process Patents – True inventor – Applications for Patent – Procedures for obtaining Patent – Award of Patent – rights of patentee – grounds for invalidation – Legal remedies – International patents </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III</b><br></p>
+                  <h4>
+                      Research Records in the patent process – Inventorship - Internet patent document searching and interactions with an information specialist - Interactions with a patent agent or attorney - Ancillary patent activities - Technology transfer, patent licensing and related strategies
+                  </h4>
+              </div>
+                <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit IV</b><br></p> 
+                  <h4>
+                      Patents and software – Business Method Patents – Data protection – Administrative methods – Digital Rights Management (DRM) – Database and Database Management systems - Billing and payment – Graphical User Interface (GUI) – Simulations – E-learning – Medical informatics – Mathematical models 
+                      
+                      <br>
+                  </h4>
+              </p>
+                </div>
+
+                <div class="jumbotron syllabus_content">
+                    <p><b>Unit V</b><br></p> 
+                    <h4>
+                        IP issues in e-commerce - Protection of websites – website hosting agreements – Copyright issues – Patentability of online business models – Jurisdiction – Digital signatures – Evidentiary value of Electronic signature certificates – Role of Certifying Authorities – Protection of  Semiconductor ICs                        
+                        <br>
+                    </h4>
+                </p>
+                </div>
+            </div>
+  
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal for Unfolding Paper-->
+<div id="unfolding_paper" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Unfolding Paper</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                        No content
+                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II</b><br></p>
+                  <h4>
+               No content </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III</b><br></p>
+                  <h4>
+               No content
+                  </h4>
+              </div>
+                <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit IV</b><br></p> 
+                  <h4>
+               No content<br>
+                  </h4>
+              </p>
+                </div>
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal for Movement Training-->
+<div id="movement_training" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Movement Training</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              
+                      <h4>
+                          This course aims at making the students aware of their free bodily movements, using various dance styles and techniques. During this 45 hour course, the students will gain the ability to move their bodies rhythmically through dance. They will be introduced to various styles ranging from Indian classical to western contemporary forms. Each student will be inculcated in a way that he/she will acquire the basic practical knowledge about the forms and be introduced into the versatility of the dancing world. Through this journey, the students will gain a sense of self confidence along with the technical knowledge pertaining to the various forms associated with this course. It is a completely practical course which gives an experience to apply this knowledge into your own movements.
+                          
+                          In a nutshell, this course aims at presenting the students with a new perspective and understanding of the world of dance. Finally this course would enable students to build their own identity in dance.
+                          
+                  </h4>
+              </div>
+              <!--
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II</b><br></p>
+                  <h4>
+               No content </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III</b><br></p>
+                  <h4>
+               No content
+                  </h4>
+              </div>
+                <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit IV</b><br></p> 
+                  <h4>
+               No content<br>
+                  </h4>
+              </p>
+                </div>
+              -->
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal for Digital Writing-->
+<div id="digital_writing" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Digital Writing</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I (Introduction to Digital Writing)</b>
+                  
+                      <h4>
+                          What is online writing?, Writing and Designing for Digital Media, Narrative structure for online and digital stories, Writing for specific platforms (eg various social and new media platforms), Copyright, Ownership, and authorship, Theorizing online spaces. 
+                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II (Approaches to Digital Writing)</b><br></p>
+                  <h4>
+                      Approach to digital storytelling, Interactive narratives, Sourcing information, Exploring Trans media stories, data visualization, online identities and the self, alternate realities. </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III (Writing Techniques)</b><br></p>
+                  <h4>
+                      Online news writing, Headlines, Sentences, Links, Tables and Info graphics, Meaningful Linking, Effective Illustrations, Content Strategy, Message, Media, Style and Tone, Purposes, Personas and Scenarios
+                  </h4>
+              </div>
+                <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit IV(Understanding the Digital Space)</b><br></p> 
+                  <h4>
+                      Digital content relevance, digital economics, psychology of digital content, how users interact with websites? Understanding the digital audience, ethical issues in writing for the digital space. <br>
+                  </h4>
+              </p>
+                </div>
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal for Organizational Behaviour-->
+<div id="organizational_behaviour" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Organizational Behaviour and Developement</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 30hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                          Definition, scope-, Approaches; Elements of Organizational Behavior, Hawthorne studies-classical and modern approaches to Management; Foundations of Group Behaviour-Group, Behavioural Models. Organizational culture and climate
+                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II (Dynamics of Organizational Behaviour)</b><br></p>
+                  <h4>
+                      Personality, Emotions, Attitudes, Perceptions, Motivation: Types, Effects on work behavior. Leadership and Power: Leadership styles, Theories, Leaders Vs Managers, Sources of power, Power centers, Power and Politics. Job satisfaction: Influence on behavior; Organizational change, Stability Vs Change, Proactive Vs Reaction change, the change process, Resistance to change, Managing change. Stress: Work Stressors, Prevention and Management of stress, Balancing work and Life. </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III (Organizational Developement)</b><br></p>
+                  <h4>
+                      Definition- Scope of Organizational Development- Characteristics of OD- Diagnostic phase- techniques used in the diagnostic process- OD interventions—Team Building- Survey feedback- Grid Training, Management By objectives (MBO)- T-Group Training, Structural techniques- Sensitivity Training- Effectiveness of Training                  </h4>
+              </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal for Parametric architecture-->
+<div id="parametric_architecture" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Parametric Architecture</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 30hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                    No content                  </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                    No Content  
+                  </h4>            </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+
+                        No content          </h4>    </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal for reinventing structures-->
+<div id="reinventing_structures" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Re-Inventing Structures in architecture</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 30hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal for art appericiation structures-->
+<div id="art_appericiation" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Art appereciation</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 30hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal for Tribal art and architecture structures-->
+<div id="tribal_art" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Tribal Art and Architecture-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Tribal Art and Architecture</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 30hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Theatre direction-->
+<div id="Theatre_direction" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for theatre direction-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Theatre direction</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 24hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Acting_course-->
+<div id="Acting_course" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Acting_course-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Acting course</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 24hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Digital_media-->
+<div id="Digital_media" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Digital_media-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Acting course</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 24hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Professional_psychology-->
+<div id="Professional_psychology" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Professional_psychology-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Professional Psychology</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 24hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Corporate Social Responsibility-->
+<div id="Corporate_Social_Responsibility" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Corporate Social Responsibility-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Corporate Social Responsibility</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for social welfare administration-->
+<div id="Social_Welfare_Administration" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for social welfare administration-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Corporate Social Responsibility</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Creativity and innovation-->
+<div id="Creativity_And_Innovation" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Creativity and innovation-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Corporate Social Responsibility</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Languages-->
+<div id="Languages" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Languages-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Languages</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Imagineering-->
+<div id="Imagineering" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Imagineering-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Imagineering</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Digital_Marketing-->
+<div id="Digital_Marketing" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Digital_Marketing-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Digital_Marketing</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 45hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Data Analytics through SPSS-->
+<div id="Data_Analytics" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Modal for Data Analytics through SPSS-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Data Analytics through SPSS</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Selling with Emotional Intelligence-->
+<div id="Emotional_Intelligence" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Modal for Selling with Emotional Intelligence-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Selling with Emotional Intelligence</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Learning through Case Studies-->
+<div id="Learning" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+  
+      <!-- Modal for Learning through Case Studies-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="modal_title">
+              <center>Learning through Case Studies</center>
+  
+              </h3>
+        </div>
+        <div class="modal-body">
+              <div class="hours">Duration: 40hrs</div>
+              <br><br>
+              <div class="jumbotron syllabus_content">
+              <p><b>Unit I</b>
+                  
+                      <h4>
+                      No content
+                                      </h4>
+              </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit II </b><br></p>
+                  <h4>
+                  No Content          
+                  </h4> </div>
+              <div class="jumbotron syllabus_content">
+                      
+                <p><b>Unit III </b><br></p>
+                  <h4>
+                  No content
+                             </h4> </div>
+                
+            </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<footer class="container-fluid text-center" style="color: white; background-color: #002a5c;">
+  <p>Copyright@ 2018 christuniversity.in</p>
+</footer>
+</body>
+</html>

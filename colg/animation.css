@@ -1,0 +1,51 @@
+.intro_box .img_space{
+    position:absolute;
+    right:-30%;
+    border:2px solid black;
+    width:300px;
+    height:300px;
+    overflow: hidden;
+    display:none
+    
+  }
+
+  
+  #c1:hover ~ #i1{
+    animation-name:image_move;
+    animation-fill-mode:forwards;
+    animation-duration:0.3s;
+    animation-timing-function: ease-out;
+    display:block;
+  }
+  
+  #c2:hover ~ #i2{  animation-name:image_move;
+    animation-fill-mode:forwards;
+    animation-duration:0.3s;
+    animation-timing-function: ease-out;}
+
+    #c3:hover ~ #i3{  animation-name:image_move;
+        animation-fill-mode:forwards;
+        animation-duration:0.3s;
+        animation-timing-function: ease-out;}
+
+ #c4:hover ~ #i4{  animation-name:image_move;
+            animation-fill-mode:forwards;
+            animation-duration:0.3s;
+            animation-timing-function: ease-out;}
+
+#c5:hover ~ #i5{  animation-name:image_move;
+                animation-fill-mode:forwards;
+                animation-duration:0.3s;
+                animation-timing-function: ease-out;}
+  
+                #c1{
+
+                }
+
+               
+  @keyframes image_move {
+    from{right:-30%;}
+    to{right:20%;}
+    
+  }
+  
